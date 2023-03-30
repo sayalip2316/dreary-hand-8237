@@ -473,3 +473,24 @@ margin-bottom: 40px;
 .footer>hr{
   color: #241C15;
 }
+.footer-middle{
+  width:80%;
+  margin: auto;
+  display: flex;
+  gap:15px;
+}
+#mini-card>p{
+font-size: 12px;
+margin-top: 10px;
+text-decoration: underline;
+}
+#mini-card>div>img{
+  width:30%;
+}
+#mini-card>div>p{
+  font-size: 12px;
+  margin-top: 10px;
+}
+#mini-card>div:nth-child(2){
+margin-top: 40px;
+}
