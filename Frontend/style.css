@@ -429,7 +429,6 @@ background-color: #f4f3f2;
 .bottom-sec{
   width:100%;
   background-color: #FBEECA;
-  border: 1px solid black;
   text-align: center;
   padding: 90px 400px 90px 400px;
 }
@@ -454,6 +453,7 @@ margin-bottom: 40px;
 .footer{
   width: 100%;
   background-color: #E7B75F;
+  padding-bottom: 100px;
 }
 #related_links{
   width:80%;
@@ -470,6 +470,72 @@ margin-bottom: 40px;
   color: black;
   font-size: 13px;
 }
-.footer>hr{
-  color: #241C15;
+#footer_hr{
+  color: black;
+}
+.footer-middle{
+  width:80%;
+  margin: auto;
+  display: flex;
+  gap:40px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+#mini-card>p{
+font-size: 12px;
+margin-top: 20px;
+text-decoration: underline;
+}
+#mini-card>div>img{
+  width:30%;
+}
+#mini-card>div>p{
+  font-size: 12px;
+  margin-top: 10px;
+}
+#mini-card>div:nth-child(2){
+margin-top: 40px;
+}
+#mini-card>div>a{
+  font-size: 12px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+.footer-end{
+  width:80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-end>div{
+  display: flex;
+}
+.footer-end>div{
+  width:30%;
+}
+.footer-end>div>img{
+  width:50%;
+}
+.footer-apps>div{
+width:100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.footer-apps>div>img{
+  width:10%;
+}
+.mailchimg>div:nth-child(1){
+  width:100%;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.mailchimg>div>img{
+  width:120%;
+  
+}
+#text{
+  font-size: 10px;
 }
