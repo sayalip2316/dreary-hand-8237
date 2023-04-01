@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <link rel="stylesheet" href="/Frontend/style.css">
+</head>
+<body>
+<div class="signup-mainDiv">
+    <div class="register">
+    <div class="Signup-navbar">
+          <img src="./images/image.png" alt="error">
+          <div>
+            <img src="https://img.icons8.com/ios/256/globe-earth.png" alt="error">
+            <select id="language" name="En">
+            <option value="EN">English</option>
+            <option value="ES">Español</option>
+            <option value="FR">Français</option>
+            <option value="PT">Português</option>
+            <option value="DE">Deutsch</option>
+            <option value="IT">Italiano</option>
+            </select>
+          </div>
+      </div>
+      <div class="register-form">
+        <h1>Sign up for Mailchimp</h1>
+        <p>Create a free account</p>
+        <h3>Email</h3>
+        <input type="text" id="email">
+        <h3>Username</h3>
+        <input type="text" id="username">
+        <h3>Password</h3>
+        <input type="password" id="password">
+       
+        <p><input type="checkbox"> I dont want to receive emails about Mailchimp and related Intuit product and feature updates, marketing best practices, and promotions from Mailchimp.</p>
+        <p>By creating an account, you agree to our Terms and have read and acknowledge the Global Privacy Statement.</p>
+        <button onclick="onSignup()">Sign up</button>
+        <p>Invisible reCAPTCHA by Google Privacy Policy and Terms of Use.</p>
+      </div>
+    </div>
+    <div class="right-yellow">
+        <img src="https://5.imimg.com/data5/ANDROID/Default/2021/4/GF/YK/OG/128006447/img-20210424-144838-256-jpg-500x500.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
+<script>
+let emailEl=document.getElementById("email")
+let usernameEl=document.getElementById("username")
+    let passEl=document.getElementById("password")
+    const onSignup=()=>{
+        const payload={
+            email:emailEl.value,
+            username:usernameEl.value,
+            password:passEl.value
+        }
+        // console.log(payload)
+        fetch("http://localhost:8000/user/register",{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify(payload)
+        }).then(res=>res.json())
+        .then(res=>{
+            console.log(res)
+            alert(res.msg)
+            window.location.href="login.html"
+        })
+        .catch(err=>console.log(err))
+    }
+</script>
