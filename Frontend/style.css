@@ -125,12 +125,20 @@
       transform: translateY(-10px);
     }
   }
+  #login{
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 20px;
+  }
   #login:hover{
     cursor: pointer;
     animation: bounce 1s linear;
   }
   #yellow{
+    padding: 10px;
      background-color: #FFE01B;
+     font-size: 13px;
+     border-radius: 20px;
   }
   #yellow:hover{
     cursor: pointer;
@@ -161,11 +169,10 @@
 }
 #login-2{
   border:1px solid black; 
-    border-radius: 7px;
+    border-radius: 20px;
     padding: 10px;
     margin-top: 20px;
     background-color: #FFE01B;
-    animation: bounce 1s linear;
 }
 #login-2:hover{
   cursor: pointer;
@@ -538,4 +545,143 @@ align-items: center;
 }
 #text{
   font-size: 10px;
+}
+
+/* create an account */
+.signup-mainDiv{
+  width:100%;
+  height:100vh;
+  
+  display: flex;
+}
+.register{
+  width:70%;
+  height:110vh;
+}
+.Signup-navbar{
+  width:100%;
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Signup-navbar>img:nth-child(1){
+width:20%;
+}
+.Signup-navbar>div>img{
+  width:25px;
+  height:25px;
+  }
+.right-yellow{
+  width:30%;
+  height:110vh;
+  background-color: #FFE01B;
+}
+.right-yellow>img{
+  width:100%;
+  margin-top: 140px;
+}
+#language{
+  width:100px;
+  height:20px;
+  font-size: 15px;
+}
+.register-form{
+width:60%;
+margin: auto;
+margin-top: 20px;
+}
+.register-form>p:nth-child(2){
+  margin-bottom: 30px;
+}
+#email{
+  width:100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+#username{
+  width:100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+#password{
+  width:100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.register-form>p:nth-child(9){
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.register-form>p:nth-child(10){
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.register-form>p>input{
+  width:20px;
+  height:20px;
+}
+.register-form>button{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  border: 1px solid #007C89;
+  border-radius: 25px;
+  background-color: #007C89;
+  color: white;
+  margin-bottom: 30px;
+}
+.register-form>p:nth-child(12){
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+/* login page */
+.mainLoginDiv{
+  width:100%;
+  height:100vh;
+  background-color: #F6F6F4;
+  padding: 20px;
+}
+.login-navbar{
+  width:100%;
+  height:100px;
+  display: flex;
+  justify-content: space-between;
+}
+.login-navbar>img:nth-child(1){
+  width:10%;
+}
+.login-navbar>div>img{
+  width:25px;
+  height:25px;
+}
+.loginForm{
+  width:40%;
+  height:auto;
+  margin: auto;
+  margin-top: 100px;
+}
+.loginForm>p{
+  margin-bottom: 30px;
+}
+.loginForm>h1{
+  margin-bottom: 30px;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+}
+.loginForm>button{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  display: block;
+  border: 1px solid #007C89;
+  border-radius: 25px;
+  background-color: #007C89;
+  color: white;
+  margin-bottom: 30px;
+}
+.loginForm>a{
+  font-size: 15px;
+  color: #007C89;
+  margin-right: 20px;
 }

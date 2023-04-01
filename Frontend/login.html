@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Paget</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="mainLoginDiv">
+    <div class="login-navbar">
+        <img src="./images/image.png" alt="error">
+        <div>
+          <img src="https://img.icons8.com/ios/256/globe-earth.png" alt="error">
+          <select id="language" name="En">
+          <option value="EN">English</option>
+          <option value="ES">Español</option>
+          <option value="FR">Français</option>
+          <option value="PT">Português</option>
+          <option value="DE">Deutsch</option>
+          <option value="IT">Italiano</option>
+          </select>
+        </div>
+    </div>
+    <div class="loginForm">
+        <h1>Log in</h1>
+        <p>Need a Mailchimp account? <span>Create an account</span></p>
+        <h3>Email</h3>
+        <input type="text" id="email">
+        <h3>Password</h3>
+        <input type="password" id="password">
+        <p><input type="checkbox"> Keep me logged in</p>
+        <button onclick="onLogin()">Log in</button>
+        <a href="#">Forgot username?</a>
+        <a href="#">Forgot password?</a>
+        <a href="#">Can't log in?</a>
+
+    </div>
+</div>
+</body>
+</html>
+<script>
+    let emailEl=document.getElementById("email")
+   let passEl=document.getElementById("password")
+    const onLogin=()=>{
+        const payload={
+            email:emailEl.value,
+            password:passEl.value,
+        }
+        // console.log(payload)
+        fetch("http://localhost:8000/user/login",{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify(payload)
+        }).then(res=>res.json())
+        .then(res=>{
+            console.log(res)
+        localStorage.setItem("token",res.token)
+        alert(res.msg)
+        window.location.href="index.html"
+    })
+        .catch(err=>console.log(err))
+    } 
+</script>
