@@ -5,8 +5,204 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="header">
+        <div class="black">
+            <p>Hey there! Free trials are available for Standard and Essentials plans. 
+           <a href="#">Start for free today.</a></p>
+        </div>
+        <div class="all_hyperlink">
+    <div>
+        <a href="#">Products</a>
+        <a href="#">Resources</a>
+        <a href="#">Inspiration</a>
+        <a href="#">Pricing</a>
+    </div>
+    <div>
+        <a href="#">
+            <img id="my_logo" src="./images/image.png" alt="error">
+        </a>
+    </div>
+    <div>
+        <a href="#">
+            <img  id="call" src="https://img.icons8.com/ios-glyphs/256/phone-disconnected.png" alt="error">
+        </a>
+        <br>
+        <a href="#">+1 (800) 315-5939</a>
+        <a href="#">
+            <img id="earth_logo" src="https://img.icons8.com/ios/256/globe-earth.png" alt="error">
+            <select id="languages" name="En">
+                <option value="EN">EN</option>
+                <option value="EN">English</option>
+                <option value="ES">Español</option>
+                <option value="FR">Français</option>
+                <option value="PT">Português</option>
+                <option value="DE">Deutsch</option>
+                <option value="IT">Italiano</option>
+            </select>
+        </a>
+        <a href="#">
+            <img id="search_page" src="https://img.icons8.com/external-others-royyan-wijaya/256/external-found-revamp-4-others-royyan-wijaya.png" alt="error">
+        </a>
+        <a href="./login.html">
+        <button id="login">Log In</button>
+        </a>
+        <a href="./signup.html">
+        <button id="yellow">Sign up</button>
+        </a>
+    </div>
+        </div>
+       </div>
+       <!-- website and ecommerce -->
+       <div class="website">
+        <div>Marketing Platform</div>
+        <div>Websites & Commerce</div>
+        <div>Transactional Email</div>
+       </div>
+
+       <!-- table -->
+       <div class="products-div">
+       <form id="myForm">
+        <label id="contacts">How many contacts do you have?</label>
+        <select id="quantity" onchange="totalPrice(this.value)">
+        <option>500</option>
+        <option>1500</option>
+        <option>2500</option>
+        <option>5000</option>
+        <option>10000</option>
+        <option>15000</option>
+        <option>20000</option>
+        <option>25000</option>
+        <option>30000</option>
+        <option>40000</option>
+        </select>
+        <!-- <label>Total Price</label>
+        <input type="text" id="total" readonly> -->
+       </form>
+
+       <!-- cards -->
+       <div class="main-card-cont">
+        <div class="mini-card">
+            <div></div>
+        </div>
+        <div class="mini-card">
+            <div></div>
+            <h1 id="title">Premium</h1>
+            <p id="desc">Our most advanced tools, unlimited contacts, and priority support; built for teams.</p>
+            <p>Starts at</p>
+            <input type="text" id="total-1" readonly>
+            <p>/month*</p>
+            <button class="buyNow">Buy Now</button>
+            <p>*Overages apply if contact or email send limit is exceeded.</p>
+            <p>Learn more</p>
+        </div>
+        <div class="mini-card">
+            <div id="mailchimp-rec">
+                <p>Mailchimp Recommends</p>
+            </div>
+            <h1 id="title">Standard</h1>
+            <p id="desc">Sell even more with personalization, optimization tools, and enhanced automations.</p>
+            <p>Starts at</p>
+            <input type="text" id="total-2" readonly>
+            <p>/month*</p>
+            <button class="buyNow">Buy Now</button>
+            <p>*Overages apply if contact or email send limit is exceeded.</p>
+            <p>Learn more</p>
+        </div>
+        <div class="mini-card">
+            <div></div>
+            <h1 id="title">Essentials</h1>
+            <p id="desc">Send the right content at the right time with testing and scheduling features.</p>
+            <p>Starts at</p>
+            <input type="text" id="total-3" readonly>
+            <p>/month*</p>
+            <button class="buyNow">Buy Now</button>
+            <p>*Overages apply if contact or email send limit is exceeded.</p>
+            <p>Learn more</p>
+        </div>
+        <div class="mini-card">
+            <div></div>
+            <h1 id="title">Free</h1>
+            <p id="desc">Easily create email campaigns and learn more about your customers</p>
+            <p>Starts at</p>
+            <input type="text" id="total-4" readonly>
+            <p>/month*</p>
+            <button class="buyNow">Buy Now</button>
+            <p>*Overages apply if contact or email send limit is exceeded.</p>
+            <p>Learn more</p>
+        </div>
+        <!-- scrolling part -->
+        <div>
+            <p>Monthly Email Sends</p>
+            <p>Users</p>
+            <p>Audiences</p>
+            <p>Customer Support</p>
+            <p>Pre-built Email Templates</p>
+            <p>300+ Integrations</p>
+            <p>Basic Reporting & Analytics</p>
+            <p>Forms & Landing Pages</p>
+            <p>Creative Assistant</p>
+            <p>Onboarding</p>
+            <p>Role-based Access</p>
+            <p>Remove Mailchimp Branding</p>
+            <p>A/B Testing</p>
+            <p>Email Scheduling</p>
+            <p>Automated Customer Journeys</p>
+            <p>Pre-built Journeys</p>
+            <p>Custom-Coded Templates</p>
+            <p>Send Time Optimization</p>
+            <p>Predictive Segmentation</p>
+            <p>Content Optimizer</p>
+            <p>Dynamic Content</p>
+            <p>Campaign Manager</p>
+            <p>Multivariate Testing</p>
+            <p>Comparative Reporting</p>
+            <p>Advanced Segmentation</p>
+        </div>
+        <div>
+            <input type="text" id="total-1" readonly>
+            <p>Unlimited</p>
+            <p>Unlimited</p>
+            <p>Phone & Priority Support</p>
+            <img src="https://www.shutterstock.com/image-vector/black-check-mark-icon-tick-600w-590651921.jpg" alt="error">
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+       </div>
+
+    </div>
 </body>
 </html>
+<script>
+    function totalPrice(val){
+      var t1=val*5;
+      var t2=val*10;
+      var t3=val*15;
+      var t4=val*20; 
+      document.getElementById("total-1").value=t1
+      document.getElementById("total-2").value=t2
+      document.getElementById("total-3").value=t3
+      document.getElementById("total-4").value=t4
+    }
+</script>
+
+<!-- <form name="myForm">
+    <label>Quantity</label>
+    <select name="quantity" onchange="totalPrice(this.value)">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    </select>
+    <label>Total Price</label>
+    <input type="text" id="total" readonly>
+   </form> -->

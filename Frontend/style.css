@@ -685,3 +685,121 @@ margin-top: 20px;
   color: #007C89;
   margin-right: 20px;
 }
+/* <!-- website and ecommerce --> */
+.website{
+  width:100%;
+  display: flex;
+  margin: auto;
+}
+.website>div{
+  width:34%;
+  height: 50px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.website>div:hover{
+  background-color: #F6F6F4;
+  border: 1px solid #BCBAB8;
+  cursor: pointer;
+}
+
+/* search form */
+.products-div{
+  width:100%;
+  height:auto;
+}
+#myForm{
+   width:40%;
+   margin-left: 550px;
+   margin-top: 50px;
+}
+#contacts{
+  width:15%;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #BCBAB8;
+  background-color: #F6F6F4;
+}
+#quantity{
+  width:15%;
+  padding: 9.5px 13px 9px 0px;
+  font-size: 18px;
+  border: 1px solid #BCBAB8;
+}
+
+/* cards */
+.main-card-cont{
+  width:80%;
+  height:auto;
+  display: grid;
+  margin: auto;
+  margin-top: 50px;
+  grid-template-columns: repeat(5,1fr);
+  border: 1px solid #BCBAB8
+}
+.mini-card{
+  position: sticky;
+  font-size: 13px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #615B56;
+  border: 1px solid #BCBAB8
+}
+.mini-card>div{
+  width:100%;
+  height:30px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+#mailchimp-rec{
+  background-color: #C5DBF2;
+  border: 1px solid #BCBAB8;
+}
+#title{
+  margin-bottom: 15px;
+  color: black;
+}
+#desc{
+  margin-bottom: 15px;
+}
+.buyNow{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #FFE01B;
+}
+#total-1{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+}
+#total-2{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+}
+#total-3{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+}
+#total-4{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+}
