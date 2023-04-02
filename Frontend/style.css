@@ -744,7 +744,10 @@ margin-top: 20px;
   margin: auto;
   margin-top: 50px;
   grid-template-columns: repeat(5,1fr);
-  border: 1px solid #BCBAB8
+  /* border: 1px solid #BCBAB8 */
+}
+.main-card-cont>div:nth-child(1){
+  border: none;
 }
 .mini-card{
   top:100px;
