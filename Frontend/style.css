@@ -62,11 +62,7 @@
   }
 
   /* navbar */
-  .header{
-    top:0px;
-    position: sticky;
-
-  }
+ 
   .black{
     width:100%;
     height:40px;
@@ -313,6 +309,10 @@
 }
 hr{
   color: rgb(229, 226, 226);
+}
+#see-all-plans:hover{
+  cursor: pointer;
+  animation: bounce 1s linear;
 }
 #hide{
   color: #BCBAB8;
@@ -748,7 +748,6 @@ margin-top: 20px;
 }
 .mini-card{
   top:100px;
-  position: sticky;
   font-size: 13px;
   padding-bottom: 20px;
   padding-right: 20px;
@@ -776,7 +775,7 @@ margin-top: 20px;
 #desc{
   margin-bottom: 15px;
 }
-.buyNow{
+#buyNow{
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
@@ -846,10 +845,141 @@ margin-top: 20px;
 }
 .scrolling-white{
   padding: 10px;
-  display: flex;
-  overflow: hidden;
   align-items: center;
   font-size: 14px;
   font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
  border: 1px solid #BCBAB8;
+}
+.hide{
+  padding: 5px;
+  text-align: center;
+}
+.hide:hover{
+  background-color:#FFE01B;
+}
+
+/* compare all features */
+.compareAllFeatures{
+  width:80%;
+  margin: auto;
+}
+#features{
+  margin-left: 510px;
+  margin-top: 60px;
+  /* margin-bottom: 100px; */
+  padding: 15px;
+  border-radius: 20px;
+}
+#features:hover{
+  cursor: pointer;
+  animation: bounce 1s linear;
+}
+.features-min{
+  width:100%;
+  display: flex;
+  margin-top: 100px;
+}
+.features-min>div{
+  width:50%;
+  padding: 20px;
+}
+.features-min>div:nth-child(1){
+  border-right: 1px solid black;
+}
+.features-min>div:nth-child(2){
+  border-left: 1px solid black;
+}
+.features-min>div>h2{
+  font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+.features-min>div>p{
+  font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.features-min>div>button{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+.features-min>div>button:hover{
+  cursor: pointer;
+  animation: bounce 1s linear;
+}
+#btn-1{
+  margin-top: 20px;
+}
+#btn-2{
+  margin-top: 90px;
+}
+
+/* FAQ */
+.faq{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 100px;
+}
+.faq>div>h1{
+  font-size: 45px;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;;
+  font-weight: bolder;
+}
+.faq>div:nth-child(1){
+  width:40%;
+}
+.faq>div:nth-child(2){
+  width:60%;
+}
+.faq>div>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.faq>div>div>img{
+  width:30px;
+  height:30px;
+}
+.faq>div>div>p{
+  font-size: 20px;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;;
+}
+/* work with leaders */
+.leaders{
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.leaders>h1{
+  margin-bottom: 70px;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;;
+  text-align: center;
+}
+.leaders>div{
+  width:100%;
+  display: flex;
+}
+.leaders>div>img{
+  width:50%;
+}
+
+
+/* Buying page */
+.Buy-main{
+  width:100%;
+  height:100vh;
+  border: 2px solid red;
+}
+.buy-main-2{
+  width:80%;
+  height:auto;
+  display: flex;
+}
+.buy-main-2>div{
+  width:50%;
+  display: flex;
 }
