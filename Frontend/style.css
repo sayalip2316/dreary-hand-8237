@@ -685,3 +685,9 @@ margin-top: 20px;
   color: #007C89;
   margin-right: 20px;
 }
+
+/* marketing planet */
+.marketing{
+  width:100%;
+  display: flex;
+}
